@@ -53,14 +53,14 @@ public class Testing02 {
     public void testTaskC1() throws Exception {
         run("7\n3\n").include("Sum = 10\n");
     }
-
-    @Test(timeout = 1500)
     public void testTaskC2() throws Exception {
         run("34\n26\n").include(
                 "DEC:34+26=60\n" +
                         "BIN:100010+11010=111100\n" +
                         "HEX:22+1a=3c\n" +
                         "OCT:42+32=74\n");
+    @Test(timeout = 1500)
+
     }
 
     @Test(timeout = 1500)
