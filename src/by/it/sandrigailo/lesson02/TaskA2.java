@@ -9,7 +9,17 @@ package by.it.sandrigailo.lesson02;
 */
 
 class TaskA2 {
+
     public static void main(String[] args) {
         System.out.println("Я начинаю изучать Java");
+    String s = "Я начинаю изучать Java";
+    printTextMoreTimes(s,5);
+    }
+
+        public static void printTextMoreTimes (String s, int count ){
+        for (int i = 0; i<4; i++){
+            System.out.println(s);
+        }
+
     }
 }
