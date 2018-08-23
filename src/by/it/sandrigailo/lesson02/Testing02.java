@@ -59,7 +59,6 @@ public class Testing02 {
                         "BIN:100010+11010=111100\n" +
                         "HEX:22+1a=3c\n" +
                         "OCT:42+32=74\n");
-    @Test(timeout = 1500)
 
     }
 
