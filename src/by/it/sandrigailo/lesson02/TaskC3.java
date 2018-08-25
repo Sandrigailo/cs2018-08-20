@@ -31,4 +31,5 @@ package by.it.sandrigailo.lesson02;
 */
 class TaskC3 {
 
+
 }
