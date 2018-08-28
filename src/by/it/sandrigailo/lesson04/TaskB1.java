@@ -28,21 +28,31 @@ package by.it.sandrigailo.lesson04;
 
 import java.util.Scanner;
 public class TaskB1 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
-         int days = 366;
+        int days = 366;
+        int days2 = 365;
 
         int res1 = year % 4;
         int res2 = year % 100;
         int res3 = year % 400;
 
-        if (res1 == 0){
+        if (res1 == 0) {
             if (res2 == 0 && res3 != 0)
-                days = 365;
-            System.out.println("количество дней в году: " + days);
+                System.out.println("количество дней в году: " + days2);
+            else System.out.println("количество дней в году: " + days);
         }
-        else
-            System.out.println("количество дней в году: " + days);
+        {
+            if (res2 == 0 && res3 == 0)
+                System.out.println("количество дней в году: " + days);
+        }
+        if (res1 != 0) {
+            System.out.println("количество дней в году: " + days2);
+        }
     }
 }
+
+
+
+

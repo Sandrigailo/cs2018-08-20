@@ -32,11 +32,13 @@ public class TaskB3 {
         int x = sc.nextInt();
         int i;
         int sum = 0;
-        for (i = 1; sum < x; sum += i++)
-                       System.out.print(i+ sum+",");
-    }
+        for (i = 1; sum <= (x-1); sum += i++) {
+            int sum1 = sum+i;
+            if (sum1>x) break;
+            System.out.print(i + sum + ",");
         }
-
+    }
+}
 
 
 
